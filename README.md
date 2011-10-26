@@ -1,7 +1,7 @@
 giraffi
 ====================
 packege.jsonにgiraffiを追加し
-'
+```
 {
     "name": "application-name"
   , "version": "0.0.1"
@@ -13,9 +13,10 @@ packege.jsonにgiraffiを追加し
     , "mongoose": ">= 0.0.1"
   }
 }
+```
 
 送信！
-'
+```js
 giraffi_client = require('giraffi').createClient();
 giraffi_client.level("info").logger("some message");
-'
+```
