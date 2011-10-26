@@ -54,7 +54,7 @@ app.configure('production', function(){
 // Routes
 app.get('/', function(req, res){
   res.render('index', {
-    title: 'Expresssss'
+    title: 'Express'
   });
 });
 
@@ -84,7 +84,7 @@ app.get('/blogs', function(req, res) {
 app.post('/blogs', function(req, res) {
   if (req.body.blog) {
     // Send info level log to giraffi
-    giraffi_client.level("info").logger("save to model:" + req.body.blog.title);
+    giraffi_client.level("info").logger("save model [title:" + req.body.blog.title + " body:" + req.body.blog.body + "]");
     
     var blog = new blogPost();
     blog.title = req.body.blog.title;
@@ -96,5 +96,5 @@ app.post('/blogs', function(req, res) {
 });
 
 
-app.listen(3000);
+app.listen(80);
 console.log("Express server listening on port %d in %s mode", app.address().port, app.settings.env);
