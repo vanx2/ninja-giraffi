@@ -8,8 +8,6 @@ giraffi
 ====================
 ログサービスです。最大1000行、もしくは5Mまで保存します。
 
-詳しい内容はこちらをどうぞ（英語）
-
 [https://github.com/giraffi/node-giraffi](https://github.com/giraffi/node-giraffi "node-giraffi")
 
 packege.jsonにgiraffiを追加し
