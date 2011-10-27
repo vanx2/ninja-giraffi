@@ -2,6 +2,8 @@
 ====================
 node-ninja 上で、giraffi(logger)とMongoDBを使うためのサンプルです。
 
+にんにん
+
 giraffi
 ====================
 packege.jsonにgiraffiを追加し
@@ -20,14 +22,23 @@ packege.jsonにgiraffiを追加し
 }
 ```
 
-送信！
+クライアントを作って
 
 ```js
 giraffi_client = require('giraffi').createClient();
+```
+
+送信！
+
+```js
 giraffi_client.level("info").logger("some message");
 ```
 
-レベルはある程度任意(Max 21文字)ですが、debug、info、error、fatal以外だと画面から検索できません。
+レベルはある程度任意(Max 21文字)ですが、debug、info、error、fatal以外だとportalのログ画面から検索できません。
+(最大1000行まで保存します。)
+
+詳しい内容はこちらをどうぞ（英語）
+[node-giraffi](https://github.com/giraffi/node-giraffi "node-giraffi")
 
 Expressとの連携
 -------------------
