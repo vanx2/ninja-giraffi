@@ -7,7 +7,7 @@ var express = require('express');
 
 var app = module.exports = express.createServer(),
     giraffi = require('giraffi'),
-    giraffi_client = require('giraffi').createClient(),
+    giraffi_client = giraffi.createClient(),
     mongoose = require('mongoose');
 
 // Create a connection to your MongoDB by default port

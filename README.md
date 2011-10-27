@@ -6,6 +6,12 @@ node-ninja 上で、giraffi(logger)とMongoDBを使うためのサンプルで�
 
 giraffi
 ====================
+ログサービスです。最大1000行、もしくは5Mまで保存します。
+
+詳しい内容はこちらをどうぞ（英語）
+
+[https://github.com/giraffi/node-giraffi](https://github.com/giraffi/node-giraffi "node-giraffi")
+
 packege.jsonにgiraffiを追加し
 
 ```
@@ -35,10 +41,11 @@ giraffi_client.level("info").logger("some message");
 ```
 
 レベルはある程度任意(Max 21文字)ですが、debug、info、error、fatal以外だとportalのログ画面から検索できません。
-(最大1000行まで保存します。)
 
-詳しい内容はこちらをどうぞ（英語）
-[node-giraffi](https://github.com/giraffi/node-giraffi "node-giraffi")
+console.logの出力内容をなどは送信していませんので、下記のログを参照してください。
+
+   tail -f /var/svc/log/site-node-service:default.log
+
 
 Expressとの連携
 -------------------
