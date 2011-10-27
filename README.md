@@ -44,7 +44,9 @@ giraffi_client.level("info").logger("some message");
 
 console.logの出力内容をなどは送信していませんので、下記のログを参照してください。
 
-   tail -f /var/svc/log/site-node-service:default.log
+```
+tail -f /var/svc/log/site-node-service:default.log
+```
 
 
 Expressとの連携
