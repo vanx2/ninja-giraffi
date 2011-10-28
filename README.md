@@ -120,7 +120,7 @@ remote: Total 52 (delta 24), reused 52 (delta 24)
 Resolving deltas: 100% (24/24), done.
 ```
 
-edit!して
+editして
 
 ```
 ~/product/node-ninja $ cd repo
@@ -139,7 +139,7 @@ index 5f2b9f0..acb504d 100644
  });
 ```
 
-commit!して
+commitして
 
 ```
 ~/product/node-ninja/repo $ git commit -am "karano-"
@@ -147,7 +147,7 @@ commit!して
  1 files changed, 1 insertions(+), 1 deletions(-)
 ```
 
-push!する
+pushする
 
 ```
 ~/product/node-ninja/repo $ git push
