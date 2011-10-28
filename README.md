@@ -88,6 +88,7 @@ MongoDB
 Node NinjaではMachine起動時にデフォルトポートでMongoDBが起動されています。
 
 mongoose
+-------------
 
 localhost のdb "test_ninja" に接続。
 
@@ -96,6 +97,7 @@ mongoose.connect('mongodb://localhost/test_ninja');
 ```
 
 node-mongodb-native
+-------------
 
 localhostに接続。
 
