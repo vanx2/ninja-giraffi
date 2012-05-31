@@ -2,7 +2,9 @@
  * Module dependencies.
  */
 
-var express = require('express');
+var express = require('express'),
+    fs = require('fs');
+
 
 var app = module.exports = express.createServer(),
     config = {
