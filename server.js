@@ -1,4 +1,3 @@
-
 /**
  * Module dependencies.
  */
@@ -6,8 +5,12 @@
 var express = require('express');
 
 var app = module.exports = express.createServer(),
+    config = {
+        apikey: fs.readFileSync( "/home/node/.giraffi/APIKEY", "UTF-8" )
+                  .replace(/\s/g, "" )
+    },
     giraffi = require('giraffi'),
-    giraffi_client = giraffi.createClient(),
+    giraffi_client = giraffi.createClient(config),
     mongoose = require('mongoose');
 
 // Create a connection to your MongoDB by default port
